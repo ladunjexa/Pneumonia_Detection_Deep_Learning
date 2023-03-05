@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  background-color: #202124;
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+}
+
+.header img {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem;
+}
+
+
+.app {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  gap: 1rem;
+  background-color: rgba(99, 100, 102, 0.2);
+}
+
+.preview_image {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.preview_image button {
+  background-color: #202124;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  cursor: pointer;
+}
+
+.model-loader {
+  background-color: #202124;
+  border-radius: 0.5rem;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.model-loader i {
+  font-size: 2rem;
+}
+
+.hide {
+  display: none;
+}
+
+.model-results h2 {
+  padding: 0.2rem;
+  text-align: center;
+}
+
+.model-results ol {
+  list-style-type: none;
+}
+
+.model-results ol li:first-child {
+  background-color: rgba(99, 100, 102, 0.3);
+  color: #fff;
+  border-radius: 0.5rem;
+}
+
+.model-results li {
+  padding: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg,#4ca5ff 2.34%,#b673f8 100.78%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 700px) {
+  .app {
+    flex-direction: column !important;
+  }
+
+  .header {
+    justify-content: center;
+  }
+}
