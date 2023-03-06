@@ -110,4 +110,8 @@
   .header {
     justify-content: center;
   }
+
+  .preview_image img {
+    height: 200;
+  }
 }
