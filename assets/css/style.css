@@ -111,7 +111,7 @@
     justify-content: center;
   }
 
-  .preview_image img {
-    height: 200;
+  .preview_image {
+    max-width: 70%;
   }
 }
